@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import apiCalls from '../../apiCalls'
 import logo from '../../Assets/glam-logo.png'
+import data from '../../mockData.js'
+import Header from '../Header/Header'
+import Searchbar  from '../Searchbar/Searchbar'
 
 apiCalls()
 
@@ -9,6 +12,7 @@ export class App extends Component {
   constructor(name: string) {
     super(name)
     this.state = {
+      allMakeUp: [],
 
     }
   }
@@ -16,9 +20,8 @@ export class App extends Component {
   render() {
     return (
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </header>  
+          <Header />
+          <Searchbar />
         </div>
     )
   }

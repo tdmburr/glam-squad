@@ -6,6 +6,7 @@ import data from '../../mockData.js'
 import Header from '../Header/Header'
 import Searchbar  from '../Searchbar/Searchbar'
 
+
 apiCalls()
 
 export class App extends Component {

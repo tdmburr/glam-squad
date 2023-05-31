@@ -20,7 +20,7 @@ export interface IProduct {
   product_colors: IColor[]
 }
 
-interface IColor {
+export interface IColor {
   hex_value: string,
   colour_name: string
 }

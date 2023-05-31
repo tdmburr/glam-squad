@@ -11,9 +11,9 @@ interface Props {
 const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
   console.log({ allMakeUp });
 
-  const cards = allMakeUp.map((product: IProduct ) => (
-      <div className='cards-container' key={product.id} >
-       <h2>Hello World</h2>
+  const cards = allMakeUp.map((product) => (
+      <div className='cards-container' key={product.name} >
+       <h2>{product.name}</h2>
       </div>
   ));
 

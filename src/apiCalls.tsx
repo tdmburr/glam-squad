@@ -1,6 +1,6 @@
 import { IProduct } from "./utilities";
 
-const acquireInfo: () => Promise<IProduct | null> = () => {
+const acquireInfo: () => Promise<IProduct[]> = () => {
   return fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`)
   .then(response => {
       if(!response.ok) {

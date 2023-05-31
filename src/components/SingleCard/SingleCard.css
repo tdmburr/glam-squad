@@ -1,13 +1,18 @@
 .product-card {
   box-sizing: border-box;
-  width: 200px;
+  width: 18em;
   display: flex;
-  margin: 10px;
-  padding: 10px;
+  margin: 1em;
+  padding: 1em;
   flex-direction: column;
   justify-content: space-evenly;
   background: radial-gradient(circle at center,gold, #994bec), 100%;
   border: 2px solid black;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+}
+
+.card-img {
+  border-radius: 20px;
+  height: 15em;
 }

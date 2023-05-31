@@ -8,10 +8,10 @@ const SingleCard: React.FC<IProduct> = (Props) => {
   return (
     <div className='product-card'>
         <h2>{Props.name}</h2>
-        <p>${Props.price}</p>
+        <p>Price: ${Props.price}</p>
         <p>Rating: {Props.rating}</p>
         <p>Product: {Props.product_type}</p>
-        <img src={Props.image_link} alt=''/>
+        <img className ='card-img'src={Props.image_link} alt=''/>
     </div>
   )
 }

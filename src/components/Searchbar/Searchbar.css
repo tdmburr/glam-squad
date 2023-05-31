@@ -1,0 +1,23 @@
+.form {
+  display: flex; 
+  flex-direction: row;
+  padding: 1em;
+  
+}
+
+.search-button-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+}
+
+.search-buttons {
+  height: 3.2vh;
+  width: 8vw;
+
+}
+
+.input {
+height: 6vh;
+width: 50vw;
+}

@@ -1,25 +1,36 @@
-// // name, brand, price, image
-// import SingleCard from '../SingleCard/SingleCard' 
-// import './CardsContainer.css'
-const CardsContainer = ""
-// const CardsContainer = (props) => {
-//   const card = props.map(prop => {
-//     return (
-//       <div className='cards-container'>
-//         <SingleCard 
-//           key={prop.id} 
-          
-//           />
-        
-//       </div>
-//     )
-//   })
-//   return (
-//     <div>
-//       {card}
-//     </div>
-//   )
-// }
+import React from 'react'
+import SingleCard from '../SingleCard/SingleCard' 
+import './CardsContainer.css'
+import { IProduct } from '../../utilities'
+import App from '../App/App'
+
+interface Props {
+  allMakeUp: IProduct[];
+}
+
+const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
+  const cards = allMakeUp.map((product) => {
+    return (
+      <SingleCard
+        id = {product.id}
+        name = {product.name}
+        brand = {product.brand}
+        price = {product.price}
+        rating = {product.rating}
+        product_type = {product.product_type}
+        description = {product.description}
+        image_link= {product.image_link}
+        key = {product.id}
+      />
+  )});
+
+
+  return (
+    <div  className='cards-container' >
+      {cards}
+    </div>
+  )
+};
 
 
 export default CardsContainer

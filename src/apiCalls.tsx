@@ -6,9 +6,7 @@ const acquireInfo: () => Promise<IProduct[]> = () => {
       if(!response.ok) {
         throw new Error("Failed to fetch make-up data.");
     }
-     return response.json()
-   })
+      return response.json()
+    })
 }
-
-
 export default acquireInfo;

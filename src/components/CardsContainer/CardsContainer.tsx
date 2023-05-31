@@ -12,15 +12,15 @@ const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
   const cards = allMakeUp.map((product) => {
     return (
       <SingleCard
-       id = {product.id}
-       name = {product.name}
-       brand = {product.brand}
-       price = {product.price}
-       rating = {product.rating}
-       product_type = {product.product_type}
-       description = {product.description}
-       image_link= {product.image_link}
-       key = {product.id}
+        id = {product.id}
+        name = {product.name}
+        brand = {product.brand}
+        price = {product.price}
+        rating = {product.rating}
+        product_type = {product.product_type}
+        description = {product.description}
+        image_link= {product.image_link}
+        key = {product.id}
       />
   )});
 

@@ -6,10 +6,10 @@ import logo from '../../Assets/glam-logo.png'
 const Header = () => {
 
   return (
-    <header>
-      <h1>
-        <img src= {logo} id='header-logo' alt="Glam-Squad" />
-        Glam-Squad
+    <header className='header-container'>
+      <img src= {logo} id='header-logo' alt="Glam-Squad logo" />
+      <h1 className='slogan'>
+        Elevate your beauty game with Glam Squad!
       </h1>        
     </header>
   )

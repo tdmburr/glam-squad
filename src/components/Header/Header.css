@@ -1,0 +1,43 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  justify-content: space-around;
+}
+
+#header-logo {
+  border-radius: 150px;
+  height: 10em;
+  width: 10em;
+  box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold; 
+}
+
+
+/* slogan styling*/
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slogan {
+  font-size: xx-large;
+  font-weight: 540;
+  color: black;
+  font-size: 7vh;
+  font-family: cursive;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+  border-radius: 25px;
+  margin-top: .7em;
+  animation: pulse 4s infinite;
+}
+

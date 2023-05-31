@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Searchbar.css'
 
 class Searchbar extends Component {
   constructor(name: string) {
@@ -10,18 +11,20 @@ class Searchbar extends Component {
 
   render() {
     return (
-        <form className='from'>
-          <input type='text'
-                 placeholder='Search by Brand'
-                 name='title'
-                 defaultValue=''
-                 >
+        <form className='form'>
+          <input className='input' type='text'
+            placeholder='Search Products'
+            name='title'
+            defaultValue=''>
           </input>
-          <button>This Will Become A Thing Probably</button>
+          <div className='search-button-container'>
+            <button className='search-buttons'>SUBMIT</button>
+            <button className='search-buttons'>CLEAR</button>
+          </div>
         </form>
-    )
-  }
-}
+    );
+  };
+};
 
 
-export default Searchbar
+export default Searchbar;

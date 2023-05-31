@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import apiCalls from '../../apiCalls'
-import logo from '../../Assets/glam-logo.png'
-import data from '../../mockData.js'
+// import logo from '../../Assets/glam-logo.png'
+// import data from '../../mockData.js'
 import Header from '../Header/Header'
 import Searchbar  from '../Searchbar/Searchbar'
 import acquireInfo from '../../apiCalls';

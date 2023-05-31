@@ -3,17 +3,6 @@ import './SingleCard.css'
 import CardsContainer from '../CardsContainer/CardsContainer.js'
 import { IProduct } from '../../utilities.js'
 
-// interface Props {
-//   name: string,
-//   brand: string,
-//   price: string,
-//   rating: number,
-//   id:number
-//   allMakeUp: IProduct[];
-// }
-
-
-
 const SingleCard: React.FC<IProduct> = (Props) => {
 
   return (
@@ -28,5 +17,4 @@ const SingleCard: React.FC<IProduct> = (Props) => {
     </div>
   )
 }
-
 export default SingleCard

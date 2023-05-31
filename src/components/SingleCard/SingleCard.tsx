@@ -3,12 +3,7 @@ import './SingleCard.css'
 
 const SingleCard = () => {
   return (
-    <li key={card.id}>
-      <img src={card.image_link} alt={card.name} />
-      <h2>{card.name}</h2>
-      <p>{card.brand}</p>
-      <p>{card.price}</p>
-    </li>
+    <h2>console.log('help')</h2>
   )
 }
 

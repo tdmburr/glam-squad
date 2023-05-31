@@ -11,7 +11,7 @@ import { Interface } from 'readline';
 import { IProduct } from '../../utilities';
 
 
-apiCalls()
+
 
 interface Props{};
 interface State {
@@ -28,7 +28,7 @@ export class App extends Component<Props, State> {
   }
 
   componentDidMount(){
-    acquireInfo()
+    acquireInfo("Covergirl")
     .then(data => {
       console.log(data)
       this.setState({ allMakeUp: data })

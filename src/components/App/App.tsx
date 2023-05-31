@@ -28,7 +28,7 @@ export class App extends Component<Props, State> {
   }
 
   componentDidMount(){
-    acquireInfo("Covergirl")
+    acquireInfo("")
     .then(data => {
       console.log(data)
       this.setState({ allMakeUp: data })

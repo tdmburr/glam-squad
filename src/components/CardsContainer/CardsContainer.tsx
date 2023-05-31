@@ -9,11 +9,15 @@ interface Props {
 }
 
 const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
-  console.log({ allMakeUp });
+  console.log('YOOO',{ allMakeUp });
 
   const cards = allMakeUp.map((product) => (
-      <div className='cards-container' key={product.name} >
+      <div className='cards-container' key={product.id} >
        <h2>{product.name}</h2>
+       <p>{product.brand}</p>
+       <p>{product.price}</p>
+       <p>{product.rating}</p>
+       <p>{product.product_type}</p>
       </div>
   ));
 

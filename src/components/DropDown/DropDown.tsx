@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './DropDown.css';
 import { brandArray } from '../../Assets/BrandNames';
+import { Link } from 'react-router-dom';
 
 interface DropDownState {
   brand: string;
@@ -16,16 +17,17 @@ class DropDown extends Component<{}, DropDownState> {
   createOptions = () => {
     const brands = brandArray.map((brand) => {
       return (
-          <option key={brand} value={brand}>
-            { brand }
-          </option>
-        )
+        <Link to={`/brand/${brand}`} >
+        <option key={brand} value={brand}>
+          { brand }
+        </option>
+        </Link>
+      )
     })
     return brands
   }
 
   handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    // const selectedBrand: string = event.target.value;
     this.setState({brand: event.target.value})
   }
 
@@ -33,14 +35,14 @@ class DropDown extends Component<{}, DropDownState> {
     return (
         <form className='form'>
           <select className='select'
+          value={this.state.brand}
             onChange={this.handleChange}>
-            <option>
+            <option disabled>
               Select Brand
             </option>
             {this.createOptions()}
           </select>
           <div className='dropDownButtonContainer'>
-            <button className='dropDownButtons'>SUBMIT</button>
             <button className='dropDownButtons'>CLEAR</button>
           </div>
         </form>

@@ -4,14 +4,14 @@ import apiCalls from '../../apiCalls'
 // import logo from '../../Assets/glam-logo.png'
 // import data from '../../mockData.js'
 import Header from '../Header/Header'
-import Searchbar  from '../Searchbar/Searchbar'
 import acquireInfo from '../../apiCalls';
 import CardsContainer from '../CardsContainer/CardsContainer';
 import { Interface } from 'readline';
 import { IProduct } from '../../utilities';
+import DropDown from '../DropDown/DropDown';
 
 
-apiCalls()
+
 
 interface Props{};
 interface State {
@@ -28,7 +28,7 @@ export class App extends Component<Props, State> {
   }
 
   componentDidMount(){
-    acquireInfo()
+    acquireInfo("")
     .then(data => {
       console.log(data)
       this.setState({ allMakeUp: data })
@@ -39,7 +39,7 @@ export class App extends Component<Props, State> {
     return (
         <div className="App">
           <Header />
-          <Searchbar />
+          <DropDown />
           <CardsContainer allMakeUp={this.state.allMakeUp}/>
         </div>
     )

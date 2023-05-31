@@ -6,7 +6,7 @@ import { IProduct } from '../../utilities.js'
 const SingleCard: React.FC<IProduct> = (Props) => {
 
   return (
-    <div>
+    <div className='product-card'>
       <h2>Our Products</h2>
         <p>{Props.name}</p>
         <p>{Props.brand}</p>

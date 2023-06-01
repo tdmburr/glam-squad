@@ -58,3 +58,4 @@ const brand_array = [
   'Zorah',
   'Zorah Biocosmetiques'
 ]
+export {}

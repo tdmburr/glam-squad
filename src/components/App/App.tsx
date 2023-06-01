@@ -9,38 +9,47 @@ import CardsContainer from '../CardsContainer/CardsContainer';
 import { Interface } from 'readline';
 import { IProduct } from '../../utilities';
 import DropDown from '../DropDown/DropDown';
+import { brandArray } from '../../Assets/BrandNames';
 
 
 
 
 interface Props{};
 interface State {
-  allMakeUp: IProduct[]
+  allMakeUp: IProduct[],
+  randomBrand: string 
 }
 
 export class App extends Component<Props, State> {
-  constructor(name: string) {
-    super(name)
+  constructor(props: Props) {
+    super(props)
     this.state = {
       allMakeUp: [],
-
+      randomBrand: brandArray[Math.floor(Math.random() * brandArray.length)]
     }
   }
 
-  componentDidMount(){
-    acquireInfo("")
-    .then(data => {
+  componentDidMount(){      
+    acquireInfo(this.state.randomBrand)
+    .then((data:IProduct[]) => {
       console.log(data)
-      this.setState({ allMakeUp: data })
+      this.setState({ allMakeUp: data }, () => {
+      })
     })
   }
 
+
+
   render() {
+    const {  allMakeUp, randomBrand } = this.state;
     return (
         <div className="App">
           <Header />
           <DropDown />
-          <CardsContainer allMakeUp={this.state.allMakeUp}/>
+          <div>
+             {randomBrand}
+          </div>
+          <CardsContainer allMakeUp={ allMakeUp }/>
         </div>
     )
   }

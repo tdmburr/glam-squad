@@ -13,7 +13,6 @@ const brandArray = [
   'Dr. Hauschka',
   'E.l.f.',
   'Essie',
-  'Glossier',
   "L'Oreal",
   'Marcelle',
   'Maybelline',

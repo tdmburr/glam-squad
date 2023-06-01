@@ -32,6 +32,7 @@ export class App extends Component<Props, State> {
   }
 
   componentDidMount(){      
+    // acquireInfo("Colourpop")
     acquireInfo(this.state.randomBrand)
     .then((data:IProduct[]) => {
       console.log(data)

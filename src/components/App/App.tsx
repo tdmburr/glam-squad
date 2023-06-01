@@ -17,7 +17,8 @@ import { brandArray } from '../../Assets/BrandNames';
 interface Props{};
 interface State {
   allMakeUp: IProduct[],
-  randomBrand: string 
+  randomBrand: string, 
+  error: string | null
 }
 
 export class App extends Component<Props, State> {
@@ -25,7 +26,8 @@ export class App extends Component<Props, State> {
     super(props)
     this.state = {
       allMakeUp: [],
-      randomBrand: brandArray[Math.floor(Math.random() * brandArray.length)]
+      randomBrand: brandArray[Math.floor(Math.random() * brandArray.length)],
+      error: null
     }
   }
 
@@ -35,6 +37,9 @@ export class App extends Component<Props, State> {
       console.log(data)
       this.setState({ allMakeUp: data }, () => {
       })
+    })
+    .catch(() => {
+      this.setState({error: "Oops, that's not very glam-of-us"})
     })
   }
 
@@ -47,9 +52,10 @@ export class App extends Component<Props, State> {
           <Header />
           <DropDown />
           <div>
-             {randomBrand}
+             <h3>Featured Brand: {randomBrand}</h3>
           </div>
           <CardsContainer allMakeUp={ allMakeUp }/>
+          {/* <Error error=''/> */}
         </div>
     )
   }

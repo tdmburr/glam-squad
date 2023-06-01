@@ -2,7 +2,7 @@ import data from '../../mockData.js'
 import './SingleCard.css'
 import CardsContainer from '../CardsContainer/CardsContainer.js'
 import { IProduct } from '../../utilities.js'
-import logo from '../../Assets/glam-logo.png'
+import errorLogo from '../../Assets/error-img.png'
 import Error from '../Error/Error'
 
 interface IError {
@@ -10,8 +10,8 @@ interface IError {
 }
 
 const SingleCard: React.FC<IProduct> = (Props) => {
-const noImage = <img className='no-card-img' src={logo} alt=''/> 
-const nullData = 'No data availble'
+const noImage = <img className='no-card-img' src={errorLogo} alt=''/> 
+const nullData = 'No data available'
   return (
     <div className='product-card'>
         <h2>{Props.name}</h2>

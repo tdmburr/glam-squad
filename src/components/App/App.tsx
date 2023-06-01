@@ -56,7 +56,6 @@ export class App extends Component<Props, State> {
              <h3>Featured Brand: {randomBrand}</h3>
           </div>
           <CardsContainer allMakeUp={ allMakeUp }/>
-          {/* <Error error=''/> */}
         </div>
     )
   }

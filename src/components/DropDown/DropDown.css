@@ -5,19 +5,19 @@
   
 }
 
-.search-button-container {
+.dropDownButtonContainer {
   display: flex;
   flex-direction: column;
   padding-left: 1%;
 }
 
-.search-buttons {
+.dropDownButtons {
   height: 3.2vh;
   width: 8vw;
 
 }
 
-.input {
+.select {
 height: 6vh;
 width: 50vw;
 }

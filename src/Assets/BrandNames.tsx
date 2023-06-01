@@ -1,5 +1,4 @@
-
-const brand_array = [
+const brandArray = [
   'Almay',
   'Alva',
   'Anna Sui',
@@ -58,4 +57,5 @@ const brand_array = [
   'Zorah',
   'Zorah Biocosmetiques'
 ]
-export {}
+
+export {brandArray}

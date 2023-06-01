@@ -6,14 +6,12 @@ import { IProduct } from '../../utilities.js'
 const SingleCard: React.FC<IProduct> = (Props) => {
 
   return (
-    <div>
-      <h2>Our Products</h2>
-        <p>{Props.name}</p>
-        <p>{Props.brand}</p>
-        <p>{Props.price}</p>
-        <p>{Props.rating}</p>
-        <p>{Props.product_type}</p>
-        <img src={Props.image_link} alt=''/>
+    <div className='product-card'>
+        <h2>{Props.name}</h2>
+        <p>Price: ${Props.price}</p>
+        <p>Rating: {Props.rating}</p>
+        <p>Product: {Props.product_type}</p>
+        <img className ='card-img'src={Props.image_link} alt=''/>
     </div>
   )
 }

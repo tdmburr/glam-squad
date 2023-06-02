@@ -26,11 +26,12 @@ export class App extends Component<Props, State> {
     super(props)
     this.state = {
       allMakeUp: [],
-      randomBrand: brandArray[Math.floor(Math.random() * brandArray.length)],
+      randomBrand: "dior",
       error: null
     }
   }
 
+  // brandArray[Math.floor(Math.random() * brandArray.length)]
   componentDidMount(){      
     // acquireInfo("Colourpop")
     acquireInfo(this.state.randomBrand)

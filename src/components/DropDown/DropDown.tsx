@@ -41,7 +41,7 @@ class DropDown extends Component<{}, DropDownState> {
             {this.createOptions()}
           </select>
           <div className='dropDownButtonContainer'>
-          <Link to={`/brand/${this.state.brand}`} >
+            <Link to={`/brand/${this.state.brand}`} >
             <button className='dropDownButtons'>SUBMIT</button>
             </Link>
             <button className='dropDownButtons'>CLEAR</button>

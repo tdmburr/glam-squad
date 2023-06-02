@@ -19,7 +19,7 @@ const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
         rating = {product.rating}
         product_type = {product.product_type}
         description = {product.description}
-        image_link= {product.image_link}
+        image_link= {product.image_link || null}
         key = {product.id}
       />
   )});
@@ -28,6 +28,7 @@ const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
   return (
     <div  className='cards-container' >
       {cards}
+      {/* <Error error=''/> */}
     </div>
   )
 };

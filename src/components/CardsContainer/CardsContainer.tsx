@@ -12,7 +12,7 @@ interface Props {
 
 
 const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
-  const [selectedCard, setSelectedCard] = useState<IProduct | null> (null);
+  // const [selectedCard, setSelectedCard] = useState<IProduct | null> (null);
   const cards = allMakeUp.map((product) => {
     return (
       <SingleCard

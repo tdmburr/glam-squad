@@ -43,6 +43,7 @@ export class App extends Component<Props, State> {
   render() {
     const { allMakeUp, randomBrand } = this.state;
     return (
+
       <div className="App">
         <Header />
         <Switch>

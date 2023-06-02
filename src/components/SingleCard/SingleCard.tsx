@@ -12,7 +12,7 @@ interface IError {
 
 const SingleCard: React.FC<IProduct> = (Props) => {
 const noImage = <img className='no-card-img' src={errorLogo} alt=''/> 
-const nullData = 'No data available'
+const nullData = 'Not Available'
   return (
     <Link to={`/${Props.brand}/${Props.id}`} >
     <div className='product-card'>
@@ -21,6 +21,7 @@ const nullData = 'No data available'
         {Props.rating === null ? <span>Rating:<Error error={nullData}/></span>:
         <p>Rating: {Props.rating}</p>}
         <p>Product: {Props.product_type}</p>
+
         {Props.image_link === null ? <div>{noImage}</div> : 
         <img className ='card-img'src={Props.image_link} alt=''/> }
     </div>

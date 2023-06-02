@@ -4,6 +4,7 @@ import SingleCard from "../SingleCard/SingleCard";
 import { IProduct } from "../../utilities";
 import App from "../App/App";
 import acquireInfo from "../../apiCalls";
+import "./ProductInfo.css"
 
 interface Props {
   id: string,
@@ -44,18 +45,22 @@ export class ProductInfo extends Component<Props, State> {
       image_link,
     } = this.state.productData;
     return (
-      <div className="product-info">
+      <div className="product-info-container">
+        <div>
         {image_link ? (
           <img className="product-info-img" src={image_link} alt="" />
         ) : (
           noImage
         )}
-        <h2> {name}</h2>
-        <p> {brand}</p>
-        <p>$ {price}</p>
-        {rating === null ? <p>Rating: {nullData}</p> : <p>Rating: {rating}</p>}
-        <p>Product Type: {product_type}</p>
-        <p>Description: {description}</p>
+        </div>
+        <div>
+          <h2 className="product-name"> {name}</h2>
+          <p className="product-info"> Brand: {brand}</p>
+          <p className="product-info">Price: $ {price}</p>
+          {rating === null ? <p className="product-info">Rating: {nullData}</p> : <p className="product-info">Rating: {rating}</p>}
+          <p className="product-info">Product Type: {product_type}</p>
+          <p className="product-info">Description: {description}</p>
+        </div>
       </div>
     );
   }

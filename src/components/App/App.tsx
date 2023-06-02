@@ -35,7 +35,6 @@ export class App extends Component<Props, State> {
     // acquireInfo("Colourpop")
     acquireInfo(this.state.randomBrand)
     .then((data:IProduct[]) => {
-      console.log(data)
       this.setState({ allMakeUp: data }, () => {
       })
     })

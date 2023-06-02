@@ -2,7 +2,6 @@ import React from 'react'
 import SingleCard from '../SingleCard/SingleCard' 
 import './CardsContainer.css'
 import { IProduct } from '../../utilities'
-import App from '../App/App'
 
 interface Props {
   allMakeUp: IProduct[];

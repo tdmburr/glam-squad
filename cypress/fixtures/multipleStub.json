@@ -1,0 +1,32 @@
+[
+  {
+    "id": 495,
+    "brand": "maybelline",
+    "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+    "price": "14.99",
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
+    "description": "Maybelline Face Studio Master Hi-Light Light Boosting bronzer formula has an expert \nbalance of shade + shimmer illuminator for natural glow. Skin goes \nsoft-lit with zero glitz.\n\n\t\tFor Best Results: Brush over all shades in palette and gently sweep over \ncheekbones, brow bones, and temples, or anywhere light naturally touches\n the face.\n\n\t\t\n\t\n\n                    ",
+    "rating": 5,
+    "product_type": "bronzer"
+  },
+  {
+    "id": 488,
+    "brand": "maybelline",
+    "name": "Maybelline Fit Me Bronzer",
+    "price": "10.29",
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+    "description": "Why You'll Love It\n\nLightweight pigments blend easily and wear evenly\nProvides a natural, fade-proof bronzed color that leaves skin the way it was meant to be...fresh, breathing and natural\n\nFor Best Results: For soft, natural look, brush along cheekbone, sweeping upward.",
+    "rating": 4.5,
+    "product_type": "bronzer"
+  },
+  {
+    "id": 499,
+    "brand": "covergirl",
+    "name": "CoverGirl truBLEND Bronzer",
+    "price": "13.99",
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/60f9f4f29be5221ff70cf20fabc03564_ra,w158,h184_pa,w158,h184.png",
+    "description": "CoverGirl's New truBLEND Bronzer has a marble-baked formula that blends instantly with skin making bronzer lines a thing of the past.Features:Baked blend of colors for the perfect glowBaked to get the perfect bronze for every skin toneBlends instantly, no bronzer linesSuitable for sensitive skin How to Apply: Step 1: Lightly dip brush into bronzer, being careful to tap or blow off excess powder. Step 2: Next, sweep the bronzer over cheeks and temples to create a warm, even, sun-kissed glow. ",
+    "rating": null,
+    "product_type": "bronzer"
+  }
+]

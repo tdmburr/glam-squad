@@ -55,11 +55,11 @@ export class ProductInfo extends Component<Props, State> {
         </div>
         <div>
           <h2 className="product-name"> {name}</h2>
-          <p className="product-info"> Brand: {brand}</p>
+          <p className="product-info">Brand: {brand}</p>
           <p className="product-info">Price: $ {price}</p>
           {rating === null ? <p className="product-info">Rating: {nullData}</p> : <p className="product-info">Rating: {rating}</p>}
           <p className="product-info">Product Type: {product_type}</p>
-          <p className="product-info">Description: {description}</p>
+          <p className="product-info">{description}</p>
         </div>
       </div>
     );

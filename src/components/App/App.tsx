@@ -23,15 +23,16 @@ export class App extends Component<Props, State> {
     super(props);
     this.state = {
       allMakeUp: [],
-      randomBrand: brandArray[Math.floor(Math.random() * brandArray.length)],
-      error: null,
-    };
+      randomBrand: "dior",
+      error: null
+    }
   }
 
   componentDidMount() {
     acquireInfo(this.state.randomBrand)
       .then((data: IProduct[]) => {
-        this.setState({ allMakeUp: data }, () => {});
+        this.setState({ allMakeUp: data });
+
       })
       .catch(() => {
         this.setState({ error: "Oops, that's not very glam-of-us" });

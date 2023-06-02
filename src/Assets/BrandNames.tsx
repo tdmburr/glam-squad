@@ -7,7 +7,6 @@ const brandArray = [
   'Cargo Cosmetics',
   'China Glaze',
   'Clinique',
-  'Colourpop',
   'Covergirl',
   'Dalish',
   'Dr. Hauschka',

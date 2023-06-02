@@ -5,6 +5,7 @@ import { IProduct } from '../../utilities'
 import App from '../App/App'
 import ProductInfo from '../ProductInfo/ProductInfo'
 
+
 interface Props {
   allMakeUp: IProduct[];
 }

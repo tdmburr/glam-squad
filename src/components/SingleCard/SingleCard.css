@@ -10,6 +10,14 @@
   border: 2px solid black;
   border-radius: 20px;
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+  font-family: monospace;
+  font-size: x-large;
+}
+
+.product-name {
+  font-family: cursive;
+  font-size: x-large;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
 }
 
 .card-img {

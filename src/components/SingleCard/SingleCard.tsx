@@ -14,7 +14,7 @@ const noImage = <img className='no-card-img' src={errorLogo} alt=''/>
 const nullData = 'No data available'
   return (
     <div className='product-card'>
-        <h2>{Props.name}</h2>
+        <h2 className='product-name'>{Props.name}</h2>
         <p>Price: ${Props.price}</p>
         {Props.rating === null ? <p>Rating:<Error error={nullData}/></p>:
         <p>Rating: {Props.rating}</p>}

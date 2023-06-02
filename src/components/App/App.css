@@ -1,0 +1,19 @@
+.featured-container {
+display: flex;
+justify-content: center;
+}
+
+.featured-brand {
+  display: flex;
+  justify-content: center;
+  margin: 1.6em;
+
+  width: 50vw;
+  background: radial-gradient(circle at center,gold, #994bec), 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+  font-size: 3em;
+  font-family: cursive;
+  justify-content: center;
+}

@@ -1,6 +1,6 @@
 .product-card {
   box-sizing: border-box;
-  width: 18em;
+  width: 19em;
   display: flex;
   margin: 1em;
   padding: 1em;
@@ -16,11 +16,15 @@
 
 .product-name {
   font-family: cursive;
-  font-size: x-large;
+  font-size: 1.5em;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
 }
 
+.product-name, .product-price, .product-rating, .product-type, .product-error {
+  padding-bottom: 1em;
+}
 .card-img {
   border-radius: 20px;
-  height: 15em;
+  height: 17em;
+
 }

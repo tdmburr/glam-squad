@@ -52,8 +52,8 @@ export class App extends Component<Props, State> {
         <div className="App">
           <Header />
           <DropDown />
-          <div>
-             <h3>Featured Brand: {randomBrand}</h3>
+          <div className='featured-container'>
+             <h3 className='featured-brand'>Featured Brand : {randomBrand}</h3>
           </div>
           <CardsContainer allMakeUp={ allMakeUp }/>
         </div>

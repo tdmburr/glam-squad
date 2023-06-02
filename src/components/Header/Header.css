@@ -36,8 +36,7 @@
   font-size: 7vh;
   font-family: cursive;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
-  border-radius: 25px;
   margin-top: .7em;
-  animation: pulse 4s infinite;
+  animation: pulse 5s infinite;
 }
 

@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Glam Squad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Welcome to Glam Squad, our Makeup Brand Search App! This application was developed as part of a stretch tech project during Module 3 at Turing School of Software & Design. As a team of four developers, we took on the challenge of learning and implementing TypeScript for this project.
 
-## Available Scripts
+Glam Squad is a user-friendly platform that allows users to easily search for their favorite makeup brands. Throughout the development process, we took the opportunity to teach ourselves TypeScript.
 
-In the project directory, you can run:
+Our app provides a comprehensive database that includes a wide range of makeup brands, ensuring that users can find information on both popular and niche brands.In addition to brand search functionality, Glam Squad offers detailed information about each selected product, such as product pricing, rating, and product image. We aimed to create a clean and intuitive user interface that allows for a seamless browsing experience.
 
-### `npm start`
+We are proud of the progress we made during this stretch tech project, both in terms of building the Glam Squad app and expanding our skills with TypeScript. We hope you enjoy using Glam Squad as much as we enjoyed developing it as a team. Happy makeup brand searching!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Contributors
+  - Devynne Marshall [GitHub](https://github.com/Devynnem) / [LinkedIn](https://www.linkedin.com/in/devynnemarshall/)
+  - Isaiah Richardson [GitHub](https://github.com/CapCinematic) / [LinkedIn](https://www.linkedin.com/in/isaiah-richardson-a59174261/)
+  - Rachel Brendel [GitHub](https://github.com/brendel-r) / [LinkedIn](https://www.linkedin.com/in/rachel-brendel/)
+  - Trey Marshall [GitHub](https://github.com/tdmburr) / [LinkedIn](https://www.linkedin.com/in/tdmars/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Goals and Objectives
+- Learn and implament TypeScript
+- Continue building understanding with React fundamentals
+- Practice refactoring
+- Create a multi-page UX using Router
 
-### `npm test`
+## Features
+  - Featured Brand
+  - Choose brand to show products
+  - choose product to show selected product info
+  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Context 
+Building Glam Squad with a team of four developers was an exhilarating and collaborative journey. We leveraged the power of TypeScript, React, Cypress, JavaScript, HTML, and CSS to create a remarkable app that caters to makeup enthusiasts.
 
-### `npm run build`
+TypeScript, a statically typed superset of JavaScript, provided us with enhanced tooling and improved code maintainability throughout the development process. React, a popular JavaScript library, served as the foundation for building dynamic and responsive user interfaces, ensuring a smooth and interactive experience for our users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+JavaScript, being the backbone of web development, allowed us to add functionality and interactivity to Glam Squad, making it engaging and user-friendly. With HTML and CSS, we crafted visually appealing and well-structured web pages, guaranteeing a seamless user experience and an attractive design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To ensure the app's quality and reliability, we integrated Cypress, a powerful end-to-end testing framework. Cypress enabled us to write automated tests, ensuring the flawless functionality of Glam Squad across different browsers and devices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Collaborating as a team brought numerous benefits to the app development process. By sharing ideas, dividing tasks, and leveraging each other's strengths, we created a well-rounded and polished app. Effective communication and teamwork were essential in combining these technologies to exceed user expectations and deliver an outstanding experience with Glam Squad.
 
-### `npm run eject`
+## Preview
+![Glam Squad Preview]()
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Set Up
+1. Fork and clone this repo
+1. `cd` into the file
+1. Run `npm install` followed by `npm start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
+  - TypeScript
+  - Javascript
+  - HTML
+  - CSS
+  - React
+  - Cypress
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [React Docs](https://react.dev/reference/react)
+  - [Cypress Docs](https://docs.cypress.io/guides/overview/why-cypress)
+  - [TypeScript Docs](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)

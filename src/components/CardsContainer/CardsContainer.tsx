@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SingleCard from '../SingleCard/SingleCard' 
 import './CardsContainer.css'
 import { IProduct } from '../../utilities'
 import App from '../App/App'
+import ProductInfo from '../ProductInfo/ProductInfo'
 
 interface Props {
   allMakeUp: IProduct[];
 }
 
+
+
 const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
+  // const [selectedCard, setSelectedCard] = useState<IProduct | null> (null);
   const cards = allMakeUp.map((product) => {
     return (
       <SingleCard

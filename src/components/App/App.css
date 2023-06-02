@@ -7,6 +7,7 @@ a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
 
 .featured-container {
 display: flex;

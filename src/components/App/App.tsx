@@ -23,7 +23,7 @@ export class App extends Component<Props, State> {
     super(props);
     this.state = {
       allMakeUp: [],
-      randomBrand: "dior",
+      randomBrand: "covergirl",
       error: null
     }
   }
@@ -53,8 +53,8 @@ export class App extends Component<Props, State> {
             render={() => (
               <>
                 <DropDown />
-                <div>
-                  <h3>Featured Brand: {randomBrand}</h3>
+                <div className="featured-container">
+                  <h3 className="featured-brand">Featured Brand: {randomBrand}</h3>
                 </div>
                 <CardsContainer allMakeUp={allMakeUp} />
               </>

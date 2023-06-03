@@ -4,6 +4,7 @@ import { IProduct } from "../../utilities";
 import App from "../App/App";
 import acquireInfo from "../../apiCalls";
 import "./ProductInfo.css";
+import { capitalizeFirstLetter } from "../../utilities";
 
 interface Props {
   id: string;
@@ -13,10 +14,6 @@ interface Props {
 interface State {
   productData: any;
 }
-
-const capitalizeFirstLetter = (str: string) => {
-  return str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
-};
 
 export class ProductInfo extends Component<Props, State> {
   constructor(props: Props) {

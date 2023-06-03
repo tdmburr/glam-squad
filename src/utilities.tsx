@@ -24,3 +24,7 @@ export interface IColor {
   hex_value: string,
   colour_name: string
 }
+
+export const capitalizeFirstLetter = (str: string) => {
+  return str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
+};

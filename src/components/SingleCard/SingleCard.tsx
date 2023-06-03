@@ -16,7 +16,7 @@ const nullData = 'Not Available';
     <div className='product-card'>
         <h2 className='product-name'>{Props.name}</h2>
         <p className='product-price'>Price: ${Props.price}</p>
-        {Props.rating === null ? <span className='product-error'>Rating: <Error error={nullData}/></span>:
+        {Props.rating === null ? <span>Rating: <Error error={nullData}/></span>:
         <p className='product-rating'>Rating: {Props.rating}</p>}
         <p className='product-type'>Product: {Props.product_type}</p>
         {Props.image_link === null ? <div>{noImage}</div> : 

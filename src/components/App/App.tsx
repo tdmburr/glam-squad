@@ -5,8 +5,9 @@ import acquireInfo from "../../apiCalls";
 import CardsContainer from "../CardsContainer/CardsContainer";
 import { IProduct } from "../../utilities";
 import { brandArray } from "../../Assets/BrandNames";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import ProductInfo from "../ProductInfo/ProductInfo";
+import Error from "../Error/Error";
 
 interface Props {}
 interface State {
@@ -65,6 +66,10 @@ export class App extends Component<Props, State> {
       <div className="App">
         <Header />
         <Switch>
+          <Route exact path ="/error">
+            <Error error="Oops, that's not very glam-of-us!"/>
+          </Route>
+          {this.state.error ? <Redirect to='/error'/> :
           <Route
             exact
             path="/"
@@ -90,7 +95,7 @@ export class App extends Component<Props, State> {
                 <CardsContainer allMakeUp={allMakeUp} />
               </>
             )}
-          />
+          />}
           <Route
             path="/:brand/:id"
             render={({ match }) => (

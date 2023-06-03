@@ -1,0 +1,8 @@
+.message {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 30%;
+  margin: 0;
+  width: 100%;
+}

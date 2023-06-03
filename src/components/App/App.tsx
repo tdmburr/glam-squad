@@ -1,12 +1,9 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
-import apiCalls from "../../apiCalls";
 import Header from "../Header/Header";
 import acquireInfo from "../../apiCalls";
 import CardsContainer from "../CardsContainer/CardsContainer";
-import { Interface } from "readline";
 import { IProduct } from "../../utilities";
-import DropDown from "../DropDown/DropDown";
 import { brandArray } from "../../Assets/BrandNames";
 import { Route, Switch } from "react-router-dom";
 import ProductInfo from "../ProductInfo/ProductInfo";
@@ -17,7 +14,7 @@ interface State {
   defaultBrand: string;
   selectedBrand: string | undefined;
   error: string | null;
-}
+};
 
 export class App extends Component<Props, State> {
   constructor(props: Props) {
@@ -28,10 +25,9 @@ export class App extends Component<Props, State> {
       defaultBrand: "CoverGirl",
       error: null,
     };
-  }
+  };
 
   componentDidMount() {
-    console.log(this.state.defaultBrand)
     acquireInfo(this.state.defaultBrand)
     .then((data: IProduct[]) => {
       this.setState({ allMakeUp: data });
@@ -39,14 +35,7 @@ export class App extends Component<Props, State> {
     .catch(() => {
       this.setState({ error: "Oops, that's not very glam-of-us" });
     });
-  }
-
-  // updateBrand(selectedBrand: string) {
-  //   console.log(selectedBrand);
-  //   this.setState({
-  //     selectedBrand: selectedBrand,
-  //   });
-  // }
+  };
 
   createOptions = () => {
     const brands = brandArray.map((brand) => {
@@ -68,7 +57,6 @@ export class App extends Component<Props, State> {
       .catch(() => {
         this.setState({ error: "Oops, that's not very glam-of-us" });
       });
-    console.log(event.target.value);
   };
 
   render() {
@@ -114,7 +102,7 @@ export class App extends Component<Props, State> {
         </Switch>
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;

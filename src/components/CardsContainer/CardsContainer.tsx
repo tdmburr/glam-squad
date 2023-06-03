@@ -1,10 +1,6 @@
-import React, { useState } from 'react'
 import SingleCard from '../SingleCard/SingleCard' 
 import './CardsContainer.css'
 import { IProduct } from '../../utilities'
-import App from '../App/App'
-import ProductInfo from '../ProductInfo/ProductInfo'
-
 
 interface Props {
   allMakeUp: IProduct[];
@@ -13,7 +9,6 @@ interface Props {
 
 
 const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
-  // const [selectedCard, setSelectedCard] = useState<IProduct | null> (null);
   const cards = allMakeUp.map((product) => {
     return (
       <SingleCard
@@ -33,10 +28,8 @@ const CardsContainer: React.FC<Props> = ({ allMakeUp }) => {
   return (
     <div  className='cards-container' >
       {cards}
-      {/* <Error error=''/> */}
     </div>
   )
 };
-
 
 export default CardsContainer

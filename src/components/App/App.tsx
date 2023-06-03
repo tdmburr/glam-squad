@@ -14,7 +14,8 @@ import ProductInfo from "../ProductInfo/ProductInfo";
 interface Props {}
 interface State {
   allMakeUp: IProduct[];
-  randomBrand: string;
+  selectedBrand: string | undefined;
+  randomBrand: string | undefined;
   error: string | null;
 }
 
@@ -23,46 +24,59 @@ export class App extends Component<Props, State> {
     super(props);
     this.state = {
       allMakeUp: [],
-      randomBrand: "covergirl",
-      error: null
-    }
+      selectedBrand: undefined,
+      randomBrand: 'Covergirl',
+      error: null,
+    };
   }
 
   componentDidMount() {
-    acquireInfo(this.state.randomBrand)
+  const endPoint = this.state.selectedBrand ? this.state.selectedBrand: "Covergirl"
+    acquireInfo(endPoint)
       .then((data: IProduct[]) => {
         this.setState({ allMakeUp: data });
-
       })
       .catch(() => {
         this.setState({ error: "Oops, that's not very glam-of-us" });
       });
   }
 
-  
+  updateBrand(selectedBrand: string) {
+    console.log(selectedBrand);
+    this.setState({
+      selectedBrand: selectedBrand,
+    });
+  }
 
   render() {
     const { allMakeUp, randomBrand } = this.state;
     return (
-
       <div className="App">
         <Header />
         <Switch>
           <Route
-            exact path="/"
+            exact
+            path="/"
             render={() => (
               <>
-                <DropDown />
+                <DropDown onChange={this.updateBrand} />
                 <div className="featured-container">
-                  <h3 className="featured-brand">Featured Brand: {randomBrand}</h3>
+                  <h3 className="featured-brand">
+                    Featured Brand: {randomBrand}
+                  </h3>
                 </div>
                 <CardsContainer allMakeUp={allMakeUp} />
               </>
             )}
           />
-          <Route path='/:brand/:id' render={({match}) => <>
-          <ProductInfo id={match.params.id} brand={match.params.brand} />
-          </>}/>
+          <Route
+            path="/:brand/:id"
+            render={({ match }) => (
+              <>
+                <ProductInfo id={match.params.id} brand={match.params.brand} />
+              </>
+            )}
+          />
         </Switch>
       </div>
     );

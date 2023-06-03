@@ -35,6 +35,6 @@ const brandArray = [
   'Suncoat',
   'Wet N Wild',
   'Zorah'
-]
+];
 
-export {brandArray}
+export {brandArray};

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import SingleCard from "../SingleCard/SingleCard";
 import { IProduct } from "../../utilities";
-import App from "../App/App";
 import acquireInfo from "../../apiCalls";
 import "./ProductInfo.css";
 import { capitalizeFirstLetter } from "../../utilities";
@@ -73,7 +71,7 @@ export class ProductInfo extends Component<Props, State> {
         </div>
       </div>
     );
-  }
-}
+  };
+};
 
 export default ProductInfo;

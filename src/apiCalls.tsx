@@ -9,6 +9,6 @@ const acquireInfo = (brand: string): Promise<IProduct[]> => {
     }
       return response.json()
     })
-}
+};
 
 export default acquireInfo;

@@ -27,5 +27,26 @@ justify-content: center;
   font-size: 3em;
   font-family: cursive;
   justify-content: center;
+}
 
+.form {
+  display: flex; 
+  flex-direction: row;
+  padding: 1em;
+}
+
+.dropDownButtonContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+}
+
+.dropDownButtons {
+  height: 3.2vh;
+  width: 8vw;
+}
+
+.select {
+height: 6vh;
+width: 50vw;
 }

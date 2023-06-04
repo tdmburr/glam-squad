@@ -1,5 +1,6 @@
 .product-card {
   box-sizing: border-box;
+  height: 35em;
   width: 19em;
   display: flex;
   margin: 1em;
@@ -20,7 +21,11 @@
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
 }
 
-.product-price, .product-rating, .product-type, .product-error {
+.not-available .error-message {
+  color: red;
+}
+
+.product-price, .product-rating, .product-type, .not-available {
   padding-bottom: 1em;
 }
 .card-img {

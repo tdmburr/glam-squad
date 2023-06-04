@@ -11,7 +11,7 @@ We are proud of the progress we made during this stretch tech project, both in t
 
 ## Deployment
 
-App is deployed at: [GlamSquad](glam-squad.vercel.app)
+App is deployed at: [GlamSquad](https://glam-squad.vercel.app/)
 
 ## Contributors
   - Devynne Marshall [GitHub](https://github.com/Devynnem) / [LinkedIn](https://www.linkedin.com/in/devynnemarshall/)

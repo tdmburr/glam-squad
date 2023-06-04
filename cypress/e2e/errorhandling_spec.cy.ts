@@ -15,11 +15,9 @@ describe("User dashboard with error handling", () => {
     })
 
     it('Should show an error message if no rating is available', () => {
-
-      cy.visit('http://localhost:3000/')
+      cy.visit('http://localhost:3000/');
       cy.get('[href="/coverg/499"] > .product-card')
-        .get('span')
-        .get('.message')
-          .contains('Not Available')
-    })
+        .find('span.error-message')
+        .contains('Not Available');
+    });
 })

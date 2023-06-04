@@ -38,8 +38,8 @@ To ensure the app's quality and reliability, we integrated Cypress, a powerful e
 
 Collaborating as a team brought numerous benefits to the app development process. By sharing ideas, dividing tasks, and leveraging each other's strengths, we created a well-rounded and polished app. Effective communication and teamwork were essential in combining these technologies to exceed user expectations and deliver an outstanding experience with Glam Squad.
 
-## Preview
-![Glam Squad Preview]()
+
+![Glam Squad Preview](https://github.com/tdmburr/glam-squad/assets/119267952/8faf3f2d-f6c2-4dd1-ad42-d3409a75fff6)
 
 ## Set Up
 1. Fork and clone this repo

@@ -1,4 +1,5 @@
 const brandArray = [
+  'Covergirl',
   'Almay',
   'Anna Sui',
   'Annabelle',
@@ -7,7 +8,6 @@ const brandArray = [
   'Cargo Cosmetics',
   'China Glaze',
   'Clinique',
-  'Covergirl',
   'Dalish',
   'Dr. Hauschka',
   'E.l.f.',

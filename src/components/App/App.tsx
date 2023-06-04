@@ -81,6 +81,7 @@ export class App extends Component<Props, State> {
                   </select>
                   <div className="dropDownButtonContainer">
                   </div>
+<<<<<<< refactor/clean-up
                 </form>
                 <div className="featured-container">
                   <h3 className="featured-brand">
@@ -91,6 +92,27 @@ export class App extends Component<Props, State> {
               </>
             )}
           />
+=======
+                  <form className="form">
+                    <select
+                      className="select"
+                      value={selectedBrand}
+                      onChange={this.handleChange}
+                    >
+                      <option disabled>
+                        Select Brand
+                      </option>
+                      {this.createOptions()}
+                    </select>
+                    <div className="dropDownButtonContainer"></div>
+                  </form>
+                  <div className="featured-container"></div>
+                  <CardsContainer allMakeUp={allMakeUp} />
+                </>
+              )}
+            />
+          )}
+>>>>>>> local
           <Route
             path="/:brand/:id"
             render={({ match }) => (

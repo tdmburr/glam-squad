@@ -2,7 +2,7 @@ describe("User dashboard with error handling", () => {
   beforeEach(() => {
     cy.intercept(
       "GET",
-      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=CoverGirl",
+      "https://makeup-api.herokuapp.com/api/v1/products.json?brand=CoverGirl",
       {
         statusCode: 200,
         fixture: "multipleStub.json",

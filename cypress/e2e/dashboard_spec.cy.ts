@@ -4,7 +4,7 @@ describe("User dashboard with user flows.", () => {
   beforeEach(() => {
     cy.intercept(
       "GET",
-      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=CoverGirl",
+      "https://makeup-api.herokuapp.com/api/v1/products.json?brand=CoverGirl",
       {
         statusCode: 200,
         fixture: "multipleStub.json",
@@ -12,7 +12,7 @@ describe("User dashboard with user flows.", () => {
     );
     cy.intercept(
       "GET",
-      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybe",
+      "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybe",
       {
         statusCode: 200,
         fixture: "multipleStub.json",
@@ -20,7 +20,7 @@ describe("User dashboard with user flows.", () => {
     );
     cy.intercept(
       "GET",
-      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=Maybelline",
+      "https://makeup-api.herokuapp.com/api/v1/products.json?brand=Maybelline",
       {
         statusCode: 200,
         fixture: "multipleStub.json",

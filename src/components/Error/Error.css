@@ -1,0 +1,14 @@
+.message {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: red;
+  margin: 2em 8em ;
+  padding: 2em 3em;
+  width: 40%;
+  font-size: 3.2em;
+  background: radial-gradient(circle at center,black, #994bec), 100%;
+  box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+  border-radius: 40px;
+  text-shadow: 0 0 5px black, 0 0 20px red, 0 0 10px black;
+}

@@ -1,19 +1,20 @@
 .header-container {
   display: flex;
   flex-direction: row;
-  margin: 1%;
+  margin: 2em;
   justify-content: space-around;
 }
 
 #header-logo {
   border-radius: 150px;
-  height: 10em;
-  width: 10em;
-  box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold; 
+  height: 20vh;
+  box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+  transition: transform 0.3s ease; 
+}
+#header-logo:hover {
+  transform: scale(1.1);
 }
 
-
-/* slogan styling*/
 @keyframes pulse {
   0% {
     opacity: 1;
@@ -21,7 +22,7 @@
   }
   50% {
     opacity: 0.5;
-    transform: scale(1.2);
+    transform: scale(.9);
   }
   100% {
     opacity: 1;
@@ -30,13 +31,31 @@
 }
 
 .slogan {
-  font-size: xx-large;
   font-weight: 540;
   color: black;
-  font-size: 7vh;
+  font-size: 3.5vw;
   font-family: cursive;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
   margin-top: .7em;
   animation: pulse 5s infinite;
 }
 
+@media (max-width: 1390px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  #header-logo {
+    height: 15vh;
+  }
+  .slogan {
+    font-size: 2.5vw;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  #header-logo{
+    height: 10vh;
+  }
+}

@@ -1,8 +1,7 @@
 import { IProduct } from "./utilities";
 
 const acquireInfo = (brand: string): Promise<IProduct[]> => {
-  console.log(brand)
-  return fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`)
+  return fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`)
   .then(response => {
       if(!response.ok) {
         throw new Error("Failed to fetch make-up data.");

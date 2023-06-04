@@ -75,6 +75,11 @@ export class App extends Component<Props, State> {
             path="/"
             render={() => (
               <>
+              <div className="featured-brand-container">
+                  <h3 className="featured-brand">
+                    Featured Brand: {selectedBrand || defaultBrand} 
+                  </h3>
+              </div>
                 <form className="form">
                   <select
                     className="select"
@@ -88,9 +93,6 @@ export class App extends Component<Props, State> {
                   </div>
                 </form>
                 <div className="featured-container">
-                  <h3 className="featured-brand">
-                    Featured Brand: {selectedBrand || defaultBrand} 
-                  </h3>
                 </div>
                 <CardsContainer allMakeUp={allMakeUp} />
               </>

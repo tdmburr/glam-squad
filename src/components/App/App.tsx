@@ -108,6 +108,14 @@ export class App extends Component<Props, State> {
               </>
             )}
           />
+          <Route
+          path="*"
+          render={() => (
+            <div>
+              <Error error="This path does not exist."/>
+            </div>
+          )}
+        />
         </Switch>
       </div>
     );

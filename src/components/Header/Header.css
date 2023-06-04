@@ -7,7 +7,7 @@
 
 #header-logo {
   border-radius: 150px;
-  height: 25vh;
+  height: 20vh;
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
   transition: transform 0.3s ease; 
 }
@@ -51,5 +51,11 @@
   .slogan {
     font-size: 2.5vw;
     margin-left: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  #header-logo{
+    height: 10vh;
   }
 }

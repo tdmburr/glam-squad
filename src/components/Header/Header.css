@@ -12,11 +12,9 @@
   transition: transform 0.3s ease; 
 }
 #header-logo:hover {
-  transform: scale(1.1); /* Increase the scale on hover to zoom in */
+  transform: scale(1.1);
 }
 
-
-/* slogan styling*/
 @keyframes pulse {
   0% {
     opacity: 1;
@@ -47,11 +45,9 @@
     flex-direction: column;
   }
 
-
   #header-logo {
     height: 15vh;
   }
-
   .slogan {
     font-size: 2.5vw;
     margin-left: 2em;

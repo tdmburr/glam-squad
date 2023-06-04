@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { IProduct } from "../../utilities";
 import acquireInfo from "../../apiCalls";
 import "./ProductInfo.css";
@@ -60,13 +60,11 @@ export class ProductInfo extends Component<Props, State> {
           <p className="product-info">Brand: {capitalizedBrand}</p>
           <p className="product-info">Price: $ {price}</p>
           {rating === null ? (
-            <p className="product-info">Rating: {nullData}</p>
+            <p className="product-info-rating">Rating: {nullData}</p>
           ) : (
             <p className="product-info">Rating: {rating}</p>
           )}
-          <p className="product-info">
-            Product Type: {capitalizedProductType}
-          </p>
+          <p className="product-info">Product Type: {capitalizedProductType}</p>
           <p className="product-info">{description}</p>
         </div>
       </div>

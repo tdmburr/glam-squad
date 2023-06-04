@@ -24,8 +24,11 @@
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
   border: 1px solid black;
 }
+.product-info-rating{
+  color: red;
+}
 
-.product-info{
+.product-info, .product-info-rating {
 font-size: 1.3em;
 padding-bottom: .5em;
 font-weight: 550;

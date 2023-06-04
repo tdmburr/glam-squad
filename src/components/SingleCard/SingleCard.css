@@ -12,7 +12,6 @@
   border-radius: 20px;
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
   font-family: monospace;
-  /* font-size: x-large; */
 }
 
 .product-name {
@@ -29,6 +28,7 @@
   padding-bottom: .5em;
   font-size: x-large;
 }
+
 .card-img {
   border-radius: 20px;
   height: 17em;

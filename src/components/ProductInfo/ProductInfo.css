@@ -33,3 +33,21 @@ font-size: 1.3em;
 padding-bottom: .5em;
 font-weight: 550;
 }
+
+@media (max-width: 1000px) {
+  .product-info-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .product-info-img {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-info-container {
+    width: 75vw;
+  }
+}

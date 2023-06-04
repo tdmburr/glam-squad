@@ -15,5 +15,21 @@ export interface IColor {
 };
 
 export const capitalizeFirstLetter = (str: string) => {
-  return str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
+  if (str) {
+    if (str.includes('_')) {
+      const words = str.split('_');
+      const capitalizedWords = words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+      return capitalizedWords.join(' ');
+    } else {
+      const words = str.split(' ');
+      const capitalizedWords = words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+      return capitalizedWords.join(' ');
+    }
+  }
+  return '';
+};
+
+export const formatPrice = (price: string): string => {
+  const numericPrice = parseFloat(price);
+  return isNaN(numericPrice) ? price : numericPrice.toFixed(2);
 };

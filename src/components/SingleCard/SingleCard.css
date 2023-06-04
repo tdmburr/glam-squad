@@ -1,9 +1,9 @@
 .product-card {
   box-sizing: border-box;
-  height: 35em;
-  width: 19em;
+  height: 50em;
+  width: 22em;
   display: flex;
-  margin: 1em;
+  margin: 2em;
   padding: 1em;
   flex-direction: column;
   justify-content: space-evenly;
@@ -12,12 +12,12 @@
   border-radius: 20px;
   box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
   font-family: monospace;
-  font-size: x-large;
+  /* font-size: x-large; */
 }
 
 .product-name {
   font-family: cursive;
-  font-size: 1.5em;
+  margin-top: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .product-price, .product-rating, .product-type, .not-available {
-  padding-bottom: 1em;
+  padding-bottom: .5em;
+  font-size: x-large;
 }
 .card-img {
   border-radius: 20px;

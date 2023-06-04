@@ -88,12 +88,11 @@ export class App extends Component<Props, State> {
                       value={selectedBrand}
                       onChange={this.handleChange}
                     >
-                      <option disabled selected>
+                      <option disabled>
                         Select Brand
                       </option>
                       {this.createOptions()}
                     </select>
-                    <div className="dropDownButtonContainer"></div>
                   </form>
                   <div className="featured-container"></div>
                   <CardsContainer allMakeUp={allMakeUp} />

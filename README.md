@@ -9,6 +9,10 @@ Our app provides a comprehensive database that includes a wide range of makeup b
 
 We are proud of the progress we made during this stretch tech project, both in terms of building the Glam Squad app and expanding our skills with TypeScript. We hope you enjoy using Glam Squad as much as we enjoyed developing it as a team. Happy makeup brand searching!
 
+## Deployment
+
+App is deployed at: [GlamSquad](glam-squad.vercel.app)
+
 ## Contributors
   - Devynne Marshall [GitHub](https://github.com/Devynnem) / [LinkedIn](https://www.linkedin.com/in/devynnemarshall/)
   - Isaiah Richardson [GitHub](https://github.com/CapCinematic) / [LinkedIn](https://www.linkedin.com/in/isaiah-richardson-a59174261/)
